@@ -5,10 +5,11 @@ gem 'rails'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.9.0'
 end
 
+
+gem 'pg'
 
 group :assets do
   # Use SCSS for stylesheets
@@ -25,9 +26,9 @@ group :test do
   gem 'capybara', '1.1.2'
 end
 
-group :production do
-  gem 'pg', '0.12.2'
-end
+# group :production do
+#   gem 'pg', '0.12.2'
+# end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
